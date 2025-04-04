@@ -1,17 +1,32 @@
-# e_commerce_website_php_mongodb
-This is an e commerce website project using PHP for backend and MONGODB for databse.
+# E-Commerce Website (PHP & MongoDB)
 
-To run this project :
-connect xampp (Apache server) from mongodb.
-Save project in xampp -> htdocs.
-Create database "olxlist" in mongodb.
-Import collections from the folder provided ("import_collections_mongodb").
+This is an e-commerce website project using **PHP** for the backend and **MongoDB** as the database.
 
-Setup your xampp smtp to send mails and replace maild "toshitpant0808@gmail.com" from your own mail id.
+## Prerequisites
+- Install **XAMPP** (Apache & PHP support)
+- Install **MongoDB** and ensure it is running
+- Configure XAMPP to connect with MongoDB
 
-user login :-
-signup as a new user
+## Installation & Setup
+1. **Clone/Download** this project and save it inside `xampp/htdocs`.
+2. **Start XAMPP** and ensure the Apache server is running.
+3. **Create a MongoDB database** named `olxlist`.
+4. **Import collections** from the `import_collections_mongodb` folder provided in this project.
+5. **Configure SMTP** in XAMPP to enable email functionalities.
+6. **Update email settings**:
+   - Replace `toshitpant0808@gmail.com` with your own email ID in the mail configuration file.
 
-admin login section :- 
-admin mail id = "toshitpant0808@gmail.com"
-admin password = "Toshit@2003"
+## User Authentication
+- **User Login**: Sign up as a new user to access the platform.
+- **Admin Login**: Credentials should be set up securely in the database (avoid hardcoding sensitive details).
+
+## Features
+- User authentication (signup & login)
+- Product listing and management
+- Email notifications for transactions
+- Admin panel for managing users & listings
+
+## Security Note
+- Ensure environment variables or a configuration file is used to manage sensitive credentials instead of hardcoding them.
+- Implement password hashing for secure authentication.
+
